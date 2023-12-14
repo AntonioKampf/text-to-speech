@@ -1,0 +1,120 @@
+/* Общий контейнер формы */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Стили для текстового поля */
+.form-container textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* Стили для поля "rate" */
+.form-container input[name="rate"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Стили для поля "volume" */
+.form-container input[name="volume"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Стили для поля "dictor" */
+.form-container select[name="dictor"] {
+  width: 103.5%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Стили для кнопки отправки формы */
+.form-container input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Стили для ошибок валидации формы */
+.form-container .error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.content-block {
+  margin-top: 20px;
+}
+
+/* Стили для фигуры */
+.content-block figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для заголовка фигуры */
+.content-block figcaption {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Стили для аудио элемента */
+.content-block audio {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Стили для ошибок валидации формы */
+.content-block .error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+/* Стили для навигационного меню */
+.navbar {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: flex;
+}
+
+/* Стили для ссылок в навигационном меню */
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+/* Стили для активной ссылки */
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Стили при наведении на ссылку */
+.navbar a:hover {
+  background-color: #ddd;
+}

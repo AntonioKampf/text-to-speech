@@ -1,0 +1,13 @@
+{% extends 'work/layout.html' %}
+{% load static %}
+{% block style %}{% static 'work/css/tts.css' %}{% endblock %}
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit">Convert to Speech</button>
+  </form>
+<a class="btn" href="{% url 'audio-res' %}">Converted text</a>
+{% endblock %}

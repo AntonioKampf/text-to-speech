@@ -1,0 +1,12 @@
+{% extends 'work/layout.html' %}
+{% load static %}
+
+{% block style %}{% static 'work/css/res_tts.css' %}{% endblock %}
+{% block content %}
+        <figure>
+            <figcaption>Result</figcaption>
+            <audio controls>
+                <source src="{{ audio }}" type="audio/mpeg">
+            </audio>
+        </figure>
+{% endblock %}
