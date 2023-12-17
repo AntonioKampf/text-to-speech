@@ -6,6 +6,7 @@ from mysite import settings
 from work.forms import TextToSpeechForm
 from utils.Text import TextToSpeech
 
+
 tts = TextToSpeech()
 
 
@@ -23,7 +24,7 @@ class TextToSpeechView(View):
             text = form.cleaned_data['text']
             rate = form.cleaned_data['rate']
             volume = form.cleaned_data['volume']
-            dictor = ('male', 'Мужчина')
+            dictor = form.cleaned_data['dictor']
 
             text_to_speech = TextToSpeech()
             text_to_speech.set_engine_properties(rate, volume, dictor)
@@ -31,6 +32,7 @@ class TextToSpeechView(View):
             text_to_speech.engine.runAndWait()
 
         return render(request, self.template_name, {'form': form})
+
 
 class AudioView(TemplateView):
     template_name = 'work/work_result.html'

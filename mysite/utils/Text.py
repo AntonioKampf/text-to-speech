@@ -11,9 +11,14 @@ class TextToSpeech:
         self.engine.setProperty('rate', rate)
         self.engine.setProperty('volume', volume)
 
-        if voice == 'male':
-            self.engine.setProperty('voice', self.name_voices.get('male'))
-        elif voice == 'female':
-            self.engine.setProperty('voice', self.name_voices.get('female'))
+        print(voice)
+        male_voice = self.name_voices.get('male')
+        
+        if voice == "Voice 1":
+            self.engine.setProperty('voice', 'english+f1')
+        elif voice == "Voice 4":
+            self.engine.setProperty('voice', 'english+f4')
+        elif voice == "Male":
+            self.engine.setProperty('voice', male_voice)
         else:
             print("No voice")
